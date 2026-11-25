@@ -1,132 +1,97 @@
-# PAI-SG Standards Working Group
+# Statera Standards Working Group
 
-**Physical AI Spider Grid (PAI-SG) — Shared Specifications, Interoperability, and Verifiable Interfaces**
+**Common specifications, interoperable interfaces, and evidence-based engineering standards for Physical AI.**
 
-[한국어 소개](#한국어--pai-sg-standards-워킹-그룹) | [PAI-SG Organizations](#pai-sg-working-groups) | [Contact](#contact)
+[한국어 소개로 이동](#한국어--statera-standards-워킹그룹) · [Statera Working Groups](#statera-working-group-network) · [Contact](#contact)
 
-## Mission
+## English — About Statera Standards
 
-PAI-SG Standards is the standards and interoperability working group of the **Physical AI Spider Grid (PAI-SG)** initiative. It develops and maintains openly shareable specifications that allow physical-AI knowledge, observations, algorithms, robotic systems, and operational evidence to be described consistently and connected across organizational and technical boundaries.
+**Statera-Standards** is the standards and interoperability working group within the Statera ecosystem. Its mission is to define, document, review, and maintain shared technical specifications that allow knowledge, research, software implementations, and Physical AI systems to connect through consistent, traceable interfaces.
 
-The group focuses on **common meaning before common implementation**: a shared vocabulary, explicit identifiers, well-defined interfaces, testable data contracts, and documented versioning. These foundations enable components developed by different contributors to be evaluated, exchanged, and integrated without assuming that their internal software stacks or hardware platforms are identical.
+The group develops a common engineering language across AI, robotics, autonomous systems, and the **Physical AI Spider Grid (PAI-SG)**. It distinguishes *normative specifications* (requirements that a conforming implementation must satisfy) from *informative guidance* (examples, explanations, and recommendations). Proposed specifications should have explicit scope, versioning, review status, and supporting evidence before they are described as adopted standards.
 
-PAI-SG Standards presents standards for the PAI-SG ecosystem in coordination with [Statera-Standards](https://github.com/Statera-Standards). The Statera standards repository organization serves as the authoritative source for the corresponding standards materials where designated; PAI-SG public artifacts should retain attribution, traceability, and controlled synchronization. A public profile is not a claim that every proposed specification is ratified or production-ready.
+### Scope and Responsibilities
 
-## Standards Scope
+- **Foundational conventions:** terminology, definitions, taxonomy, units, coordinate frames, reference frames, and time conventions.
+- **Knowledge interoperability:** graph node and edge types, identifiers, metadata, provenance, semantic relationships, and schema evolution.
+- **Physical-world representation:** physical state, time, spatial relationships, uncertainty, events, and world-state exchange conventions.
+- **System interfaces:** data contracts, API schemas, message formats, component boundaries, and integration requirements across edge, on-premises, and cloud systems.
+- **Verification and governance:** conformance criteria, reproducible test cases, change proposals, compatibility policies, and specification version history.
 
-### Physical AI Concepts and Semantics
+Statera-Standards provides the specifications and acceptance criteria; it does not claim that every proposed specification is already implemented, externally certified, or an official international standard.
 
-Define consistent terminology for physical entities, robots, sensors, actuators, environments, tasks, capabilities, observations, and events. Specify relationships and constraints so that a concept retains its meaning when exchanged between research, implementation, and operational contexts.
+### PAI-SG Framework Series
 
-### Coordinate Systems, Time, and Physical State
+The PAI-SG Framework Series is a key standards-oriented body of work. Topics under its planned or developing scope include:
 
-Describe reference frames, coordinate transformations, units, timestamps, synchronization assumptions, uncertainty, and physical-state representation. Make frame conventions and temporal meaning explicit rather than leaving them as hidden implementation assumptions.
+| Framework topic | Intended coverage |
+| --- | --- |
+| PASG principles and coordinate system | Shared principles, coordinates, and spatial conventions |
+| Physical AI concept taxonomy and semantic model | Consistent terminology and semantic relationships |
+| Knowledge graph node and edge specification | Typed graph structures, identities, and relationships |
+| Physical state, time, and world representation | Temporal and physical-state modeling conventions |
+| Edge Physical Intelligence (EAL) | Interfaces and responsibilities at the edge layer |
+| On-premises and Cloud Collective Intelligence (OPL) | Interoperability across on-premises and cloud layers |
 
-### Knowledge Graphs and Evidence Links
+These are framework subject areas, not a declaration that every document has been formally ratified or published. Publication status and revision history should be checked in the relevant repositories.
 
-Establish interoperable node and edge definitions for knowledge assets, algorithms, components, experimental results, and physical-world observations. Link claims to supporting evidence, versions, validation procedures, and provenance when publication is authorized.
+### Working Principles
 
-### Data Schemas and Component Interfaces
-
-Specify machine-readable data contracts for datasets, models, sensor streams, component descriptions, APIs, and system interfaces. Where useful, define required and optional fields, validation rules, compatibility expectations, and reference examples.
-
-### Verification and Conformance
-
-Encourage testable requirements, reference fixtures, schema validation, reproducible test procedures, and clearly scoped conformance claims. Distinguish an experimental proposal from a reviewed specification and from an implementation verified against a particular version.
-
-### Lifecycle and Change Control
-
-Maintain clear ownership, version history, review status, change proposals, deprecation notices, and migration guidance. Standards evolve through evidence and review, not through undocumented changes to a public interface.
-
-## PASG Framework and Specification Areas
-
-The PAI-SG Standards effort is aligned with the broader PASG Framework Series, including principles and coordinate systems; Physical AI concept taxonomy and semantic models; knowledge-graph node and edge specifications; physical state, time, and world representation; edge physical intelligence; and on-premises/cloud collective intelligence. Individual documents, maturity levels, and release schedules must be checked in their respective authoritative repositories. References here describe **scope**, not a guarantee of finalized publication.
-
-The group also supports component-card structures and cross-domain mappings that can connect research findings, implementation evidence, operational requirements, and public knowledge assets. Sensitive architecture, raw evidence, supplier terms, security-relevant details, and unpublished engineering decisions remain outside the public layer unless explicitly approved for release.
-
-## How We Work
-
-A candidate standard begins with a clearly defined interoperability problem. Contributors identify stakeholders, document terminology and assumptions, propose a schema or interface, and build representative examples. Implementers then test the proposal against realistic use cases and record compatibility issues. A reviewed revision can be published with its scope, status, version, and evidence. Feedback from the Library, Workshop, Research, Guild, and Foundation groups informs later revisions.
-
-We welcome constructive contributions in specification drafting, schema design, reference examples, validation tests, documentation, and compatibility analysis. Contribution and review arrangements may vary by repository; please consult the repository's own contribution instructions and publication status before submitting materials.
-
-## PAI-SG Working Groups
-
-The six working groups form a connected ecosystem, with complementary responsibilities:
-
-| Working Group | Responsibility | GitHub |
-| --- | --- | --- |
-| **Foundation** | Mission, guiding principles, stewardship, and governance | [PAI-SG-Foundation](https://github.com/PAI-SG-Foundation) |
-| **Library** | Structured Physical AI knowledge, technical publications, and reusable references | [PAI-SG-Library](https://github.com/PAI-SG-Library) |
-| **Workshop** | Reproducible software implementations, integration examples, and experiments | [PAI-SG-Workshop](https://github.com/PAI-SG-Workshop) |
-| **Guild** | Contributor collaboration, domain roles, and evidence-based contribution records | [PAI-SG-Guild](https://github.com/PAI-SG-Guild) |
-| **Research** | Research questions, algorithm exploration, benchmarks, and empirical validation | [PAI-SG-Research](https://github.com/PAI-SG-Research) |
-| **Standards** | Shared schemas, semantics, interfaces, and interoperability criteria | [PAI-SG-Standards](https://github.com/PAI-SG-Standards) |
+Specifications should be **clear, versioned, testable, implementation-neutral where practical, and traceable to evidence**. Public documentation and released standards are distinguished from private engineering materials, internal architecture, supplier details, costs, and raw evidence. Only information approved for public release belongs in public repositories.
 
 ## Statera Working Group Network
 
-PAI-SG's public-facing working groups correspond to the Statera network. The Statera layer provides authoritative source materials where designated; PAI-SG adapts and presents approved materials for the Physical AI Spider Grid context without implying that internal source content is public.
+Statera operates through six complementary working groups. Each group has a distinct responsibility while contributing to a shared engineering knowledge system.
 
-[Statera-Foundation](https://github.com/Statera-Foundation) · [Statera-Library](https://github.com/Statera-Library) · [Statera-Workshop](https://github.com/Statera-Workshop) · [Statera-Guild](https://github.com/Statera-Guild) · [Statera-Research](https://github.com/Statera-Research) · **[Statera-Standards](https://github.com/Statera-Standards)**
+| Working Group | Role | GitHub |
+| --- | --- | --- |
+| **Foundation** | Mission, principles, organizational identity, and governance | [Statera-Foundation](https://github.com/Statera-Foundation) |
+| **Library** | Structured technical knowledge, manuscripts, and educational publications | [Statera-Library](https://github.com/Statera-Library) |
+| **Workshop** | Reproducible implementations, software experiments, and algorithm verification | [Statera-Workshop](https://github.com/Statera-Workshop) |
+| **Guild** | Contributor collaboration, domain roles, responsibility, and evidence-backed contribution records | [Statera-Guild](https://github.com/Statera-Guild) |
+| **Research** | Research hypotheses, experimental studies, benchmarks, and technical validation | [Statera-Research](https://github.com/Statera-Research) |
+| **Standards (this group)** | Shared specifications, conformance, and interoperability | [Statera-Standards](https://github.com/Statera-Standards) |
+
+**Relationship to PAI-SG:** [PAI-SG-Standards](https://github.com/PAI-SG-Standards) is the corresponding organization in the Physical AI Spider Grid ecosystem. Statera remains the source-of-truth for Statera-owned specifications unless a particular project explicitly defines a different governance arrangement. Public mirrors or derivative documentation must not be confused with independently approved standards.
 
 ---
 
-## 한국어 — PAI-SG Standards 워킹 그룹
+## 한국어 — Statera Standards 워킹그룹
 
-**Physical AI Spider Grid(PAI-SG) — 공통 기술 규격, 상호운용성 및 검증 가능한 인터페이스**
+**Statera-Standards(스타테라 표준 워킹그룹)**는 Statera 생태계의 기술 표준 및 상호운용성(Interoperability)을 담당하는 조직입니다. 인공지능(AI), 로보틱스(Robotics), 자율 시스템(Autonomous Systems), 피지컬 AI 스파이더 그리드(Physical AI Spider Grid, PAI-SG)에서 사용하는 지식, 연구 결과, 소프트웨어 및 물리 시스템이 일관된 규칙으로 연결될 수 있도록 공통 기술 명세를 정의하고 관리합니다.
 
-### 목적과 역할
+이 조직은 개별 알고리즘의 구현을 직접 담당하기보다, 서로 다른 구현물이 함께 동작하기 위한 **공통 용어, 데이터 구조, 인터페이스, 검증 기준**을 정립합니다. 준수해야 하는 규범적 요구사항(Normative Requirements)과 참고용 설명(Informative Guidance)을 구분하며, 제안 단계의 문서를 공식 승인된 표준으로 표현하지 않습니다.
 
-**PAI-SG Standards**는 Physical AI Spider Grid 생태계의 표준 및 상호운용성을 담당하는 워킹 그룹입니다. 물리 인공지능(Physical AI)의 지식, 관측 데이터, 알고리즘, 로봇 시스템, 실험 및 운영 근거를 일관된 형식으로 기술하고 서로 연결할 수 있도록 공개 가능한 규격과 공통 계약을 정리합니다.
+### 주요 역할과 책임
 
-서로 다른 소프트웨어, 센서, 로봇 플랫폼이 같은 내부 구조를 사용하도록 강제하기보다는 **개념의 의미, 식별자, 좌표계, 시간 기준, 데이터 구조 및 인터페이스의 명확성**을 우선합니다. 이를 통해 다양한 참여자가 개발한 구성 요소를 비교·검증·교환·통합할 수 있는 기반을 마련합니다.
+- **기본 기술 규약:** 용어와 정의, 개념 분류 체계(Taxonomy), 단위, 좌표계(Coordinate System), 기준 좌표계(Reference Frame), 시간 표현 규칙을 관리합니다.
+- **지식 상호운용성:** 지식 그래프(Knowledge Graph)의 노드(Node)·엣지(Edge), 식별자, 메타데이터, 출처 추적(Provenance), 의미 관계 및 스키마 변경 규칙을 정의합니다.
+- **물리 세계 표현:** 물리 상태(Physical State), 시간(Time), 공간 관계, 불확실성(Uncertainty), 이벤트(Event), 월드 상태(World State)의 공통 표현을 정리합니다.
+- **시스템 인터페이스:** 데이터 계약(Data Contract), API 스키마, 메시지 형식, 구성요소 간 경계와 Edge·On-premises·Cloud 연동 규격을 정립합니다.
+- **검증 및 변경 관리:** 적합성(Conformance) 판단 기준, 재현 가능한 시험 사례, 개정 제안, 호환성 정책과 버전 이력을 관리합니다.
 
-PAI-SG Standards는 [Statera-Standards](https://github.com/Statera-Standards)와 연계됩니다. 지정된 표준 자료의 원본 관리 기준(SSOT)은 Statera 측에 두며, PAI-SG에는 공개가 승인된 자료를 출처 및 버전 추적성을 유지하면서 제공합니다. 제안 단계의 규격을 승인된 표준이나 실제 검증 완료 규격으로 표시하지 않습니다.
+### PAI-SG Framework Series와의 관계
 
-### 핵심 표준화 영역
+PAI-SG Framework Series는 Standards가 관리하는 핵심 표준화 대상입니다. 주요 주제에는 **PASG 원칙 및 좌표계**, **Physical AI 개념 분류와 의미 모델**, **지식 그래프 노드·엣지 명세**, **물리 상태·시간·월드 표현**, **엣지 물리 지능(EAL)**, **온프레미스 및 클라우드 집단 지능(OPL)** 등이 포함됩니다.
 
-**개념 분류 및 의미 모델(Semantic Model).** 로봇, 센서, 액추에이터, 환경, 작업, 역량, 관측, 이벤트 및 물리 객체에 대한 공통 용어와 관계를 정의합니다. 연구와 구현, 실제 운영 사이에서 동일한 개념이 일관되게 해석되도록 지원합니다.
+이는 표준화 대상과 기술 범위를 설명한 것이며, 모든 문서가 이미 최종 승인되었거나 공개되었다는 의미는 아닙니다. 각 문서의 실제 공개 여부와 승인·개정 상태는 해당 Repository의 기록을 기준으로 확인해야 합니다.
 
-**좌표계·시간·물리 상태(Coordinate, Time, Physical State).** 기준 좌표계, 좌표 변환, 단위, 타임스탬프, 시간 동기화, 불확실성 및 물리 상태 표현을 명시합니다. 서로 다른 센서나 로봇에서 생성된 데이터의 공간적·시간적 의미를 구분할 수 있도록 합니다.
+### 운영 원칙
 
-**지식 그래프(Knowledge Graph).** 지식 자료, 알고리즘, 구성 요소, 실험 결과, 물리 세계 관측을 연결하는 노드(Node)와 엣지(Edge)의 의미 및 속성을 정리합니다. 공개 가능한 범위에서 주장, 근거(Evidence), 출처, 버전 및 검증 절차의 추적성을 지원합니다.
+기술 명세는 **명확성, 버전 관리, 시험 가능성, 구현 간 중립성, 근거 추적성**을 지향합니다. 공개 표준과 공개 문서는 비공개 핵심 설계, 내부 아키텍처, 공급업체·비용 정보, 원시 검증 증거와 분리하여 관리합니다. 공개 승인을 받은 자료만 Public Repository에 게시합니다.
 
-**데이터 스키마 및 인터페이스(Data Schema & Interface).** 데이터셋, 모델, 센서 스트림, 컴포넌트 카드, API 및 시스템 간 연계에 필요한 필드, 타입, 필수 조건, 호환성 규칙과 예제를 정의합니다. 필요에 따라 기계 판독 가능한 스키마와 검증용 예제를 제공합니다.
+## Statera 6개 워킹그룹 소개 및 연결
 
-**검증 및 적합성(Verification & Conformance).** 시험 가능한 요구사항, 기준 데이터, 재현 가능한 검증 절차, 스키마 검사와 버전별 적합성 판단 기준을 정리합니다. 연구 제안, 검토된 규격, 특정 버전에 대한 적합성 검증 결과를 명확히 구분합니다.
-
-**버전 및 변경 관리(Version & Change Control).** 규격의 소유 책임, 변경 제안, 검토 상태, 개정 이력, 호환성, 폐기 예정 항목 및 이전 지침을 관리할 수 있는 원칙을 마련합니다.
-
-### PASG Framework와의 관계
-
-PAI-SG Standards는 PASG Framework Series의 원칙 및 좌표계, Physical AI 개념 분류와 의미 모델, 지식 그래프 노드·엣지 규격, 물리 상태·시간·월드 표현, 엣지 물리 지능, 온프레미스 및 클라우드 집단 지능 등의 영역과 연결됩니다. 개별 문서의 공개 여부와 확정 상태는 해당 원본 저장소에서 확인해야 합니다.
-
-표준의 목표는 문서의 양을 늘리는 것이 아니라 **구현 가능한 규격과 검증 가능한 증거를 연결하는 것**입니다. 이를 위해 Library의 지식, Workshop의 구현, Research의 실험, Guild의 기여 기록 및 Foundation의 운영 원칙과 연계합니다.
-
-공개 표준 자료와 내부 설계·개발 자료는 구분합니다. 비공개 아키텍처, 원시 실험 증거, 공급사 및 원가 정보, 보안 관련 세부사항과 미공개 의사결정은 별도 승인 없이 공개하지 않습니다.
-
-### 표준 개발 및 참여 원칙
-
-표준 제안은 해결하려는 상호운용성 문제와 적용 범위를 명확히 하는 것에서 시작합니다. 이후 용어 및 가정을 정리하고 스키마·인터페이스·예제를 제안하며, 실제 구현 및 시험 결과를 바탕으로 개선합니다. 검토를 통과한 공개 문서는 적용 범위, 버전, 상태와 근거를 함께 관리합니다.
-
-기술 용어 정리, 데이터 모델링, 인터페이스 설계, 검증 코드, 문서화 및 호환성 분석에 관심 있는 참여자의 협업을 지향합니다. 실제 기여 방법과 공개 범위는 각 저장소의 지침을 우선합니다.
-
-### PAI-SG 6개 워킹 그룹
-
-| 워킹 그룹 | 주요 역할 | GitHub |
+| 워킹그룹 | 주요 역할 | GitHub |
 | --- | --- | --- |
-| **Foundation** | 비전, 원칙, 운영 체계 및 거버넌스 | [PAI-SG-Foundation](https://github.com/PAI-SG-Foundation) |
-| **Library** | Physical AI 지식 체계, 기술 문헌 및 참조 자료 | [PAI-SG-Library](https://github.com/PAI-SG-Library) |
-| **Workshop** | 알고리즘 구현, 재현 가능한 실험 및 시스템 연동 | [PAI-SG-Workshop](https://github.com/PAI-SG-Workshop) |
-| **Guild** | 기여자 협업, 전문 분야별 역할 및 근거 기반 기여 기록 | [PAI-SG-Guild](https://github.com/PAI-SG-Guild) |
-| **Research** | 연구 가설, 신기술 탐색, 벤치마크 및 실증 검증 | [PAI-SG-Research](https://github.com/PAI-SG-Research) |
-| **Standards** | 공통 스키마, 의미 체계, 인터페이스 및 상호운용성 | [PAI-SG-Standards](https://github.com/PAI-SG-Standards) |
+| **Foundation (재단·원칙)** | 설립 목적, 철학, 조직 정체성과 거버넌스 | [Statera-Foundation](https://github.com/Statera-Foundation) |
+| **Library (지식·출판)** | 기술 지식의 구조화, 원고, 교육 및 출판 자료 | [Statera-Library](https://github.com/Statera-Library) |
+| **Workshop (구현·실험)** | 알고리즘 구현, 재현 가능한 실험 및 소프트웨어 검증 | [Statera-Workshop](https://github.com/Statera-Workshop) |
+| **Guild (협업·기여)** | 참여자 협력, 도메인별 역할, 책임과 증거 기반 기여 기록 | [Statera-Guild](https://github.com/Statera-Guild) |
+| **Research (연구·실증)** | 연구 가설, 실험 설계, 벤치마크와 기술적 타당성 검증 | [Statera-Research](https://github.com/Statera-Research) |
+| **Standards (표준·연결, 현재 조직)** | 공통 기술 규격, 적합성 검증과 상호운용성 | [Statera-Standards](https://github.com/Statera-Standards) |
 
-### Statera 워킹 그룹 연결
-
-PAI-SG의 각 워킹 그룹은 Statera의 대응 조직과 연계됩니다. 지정된 자료의 원본 관리와 공개용 자료의 제공은 구분하며, 승인된 공개 자료의 출처와 개정 이력을 유지합니다.
-
-[Statera-Foundation](https://github.com/Statera-Foundation) · [Statera-Library](https://github.com/Statera-Library) · [Statera-Workshop](https://github.com/Statera-Workshop) · [Statera-Guild](https://github.com/Statera-Guild) · [Statera-Research](https://github.com/Statera-Research) · **[Statera-Standards](https://github.com/Statera-Standards)**
+**PAI-SG와의 연결:** [PAI-SG-Standards](https://github.com/PAI-SG-Standards)는 Physical AI Spider Grid 생태계의 대응 조직입니다. 별도의 거버넌스 결정이 없는 한 Statera에서 관리하는 원본 기술 명세의 기준 저장소(SSOT)는 Statera이며, PAI-SG의 공개 자료는 원본과의 관계 및 적용 범위를 명확히 표시해야 합니다.
 
 ---
 
@@ -144,4 +109,4 @@ Statera Working Group
 
 ---
 
-*This organization profile describes the PAI-SG Standards working group's purpose and collaboration model. Individual repositories govern the actual status, licensing, and contribution rules of their contents.*
+*Statera Standards Working Group — Public organization profile. Descriptions of planned work are not statements of completed certification or formal standard adoption.*
